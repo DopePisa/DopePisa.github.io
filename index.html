@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Creative Developer</title>
+    <title>Gabriele Pisanello | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -187,8 +187,10 @@
         }
 
         .gradient-text {
-            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            background-image: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
             -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
             -webkit-text-fill-color: transparent;
         }
 
@@ -580,7 +582,7 @@
     </div>
 
     <nav class="navbar glass">
-        <div class="logo">PORTFOLIO.</div>
+        <div class="logo">G. Pisanello</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -596,10 +598,10 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="animate-up">Hello, I'm <span class="gradient-text">Gabri</span></h1>
-            <h2 class="animate-up delay-1">I build <span class="typing-text"></span></h2>
-            <p class="animate-up delay-2">Crafting digital experiences with code and creativity. Let's build something
-                amazing together.</p>
+            <h1 class="animate-up">Hello, I'm <span class="gradient-text">Gabriele Pisanello</span></h1>
+            <h2 class="animate-up delay-1">Degree in <span class="typing-text"></span></h2>
+            <p class="animate-up delay-2">Information Engineering Graduate passionate about software development and
+                innovation.</p>
             <div class="cta-buttons animate-up delay-3">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Contact Me</a>
@@ -610,10 +612,10 @@
             <div class="glass-card visual-card">
                 <i class="fa-solid fa-code"></i>
                 <div class="code-snippet">
-                    <span class="keyword">const</span> <span class="variable">developer</span> = {<br>
-                    &nbsp;&nbsp;name: <span class="string">'Gabri'</span>,<br>
-                    &nbsp;&nbsp;skills: [<span class="string">'Web'</span>, <span class="string">'Design'</span>, <span
-                        class="string">'AI'</span>]<br>
+                    <span class="keyword">const</span> <span class="variable">engineer</span> = {<br>
+                    &nbsp;&nbsp;name: <span class="string">'Gabriele'</span>,<br>
+                    &nbsp;&nbsp;degree: <span class="string">'Info. Eng.'</span>,<br>
+                    &nbsp;&nbsp;passion: <span class="string">'Code'</span><br>
                     };
                 </div>
             </div>
@@ -628,12 +630,12 @@
                     turning ideas into reality through code. I am always learning new technologies and improving my
                     craft.</p>
                 <div class="skills-grid">
-                    <div class="skill-item"><i class="fa-brands fa-html5"></i> HTML5</div>
-                    <div class="skill-item"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                    <div class="skill-item"><i class="fa-solid fa-c"></i> C</div>
+                    <div class="skill-item"><i class="fa-solid fa-code"></i> C++</div>
+                    <div class="skill-item"><i class="fa-brands fa-java"></i> Java</div>
+
                     <div class="skill-item"><i class="fa-brands fa-js"></i> JavaScript</div>
-                    <div class="skill-item"><i class="fa-brands fa-react"></i> React</div>
                     <div class="skill-item"><i class="fa-solid fa-database"></i> Database</div>
-                    <div class="skill-item"><i class="fa-solid fa-wand-magic-sparkles"></i> Design</div>
                 </div>
             </div>
         </div>
@@ -647,7 +649,8 @@
                 <div class="project-image">
                     <img src="https://via.placeholder.com/600x400/1a1a1a/808080?text=Project+1" alt="Project 1">
                     <div class="overlay">
-                        <a href="#" class="btn-icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/DopePisa" class="btn-icon" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
                         <a href="#" class="btn-icon"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
@@ -718,8 +721,9 @@
                 <h3>Let's Connect</h3>
                 <p>Feel free to reach out for collaborations or just a friendly hello.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/DopePisa" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gabriele-pisanello-7446b2360/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa-solid fa-envelope"></i></a>
                 </div>
@@ -728,13 +732,13 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Gabri. All rights reserved.</p>
+        <p>&copy; 2026 Gabriele Pisanello. All rights reserved.</p>
     </footer>
 
     <script>
         // Typewriter Effect
         const textElement = document.querySelector('.typing-text');
-        const words = ['Websites', 'Experiences', 'Solutions', 'the Future'];
+        const words = ['Engineering', 'Software', 'Innovation', 'the Future'];
         let wordIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
